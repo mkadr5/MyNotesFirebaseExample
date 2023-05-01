@@ -41,7 +41,6 @@ struct NotesView: View {
                             }
                         }
                     }.onAppear {
-                        print("onappear: \(authViewModel.user?.uid ?? "bos")")
                         viewModel.getNotes(uid: authViewModel.user?.uid ?? "")
                     }
                 }
